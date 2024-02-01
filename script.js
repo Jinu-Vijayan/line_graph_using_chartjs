@@ -38,8 +38,8 @@ const chart = new Chart(MY_CHART,CONFIG);
 
 setInterval(()=>{
     const randomNumber = Math.floor(Math.random() * 100);
-    data.labels.push(randomNumber);
-    data.datasets[[0]].data.push(randomNumber);
+    chart.data.labels.push(chart.data.datasets[[0]].data.length);
+    chart.data.datasets[[0]].data.push(randomNumber);
     chart.update();
 },2300)
 
